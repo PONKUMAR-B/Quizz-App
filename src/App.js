@@ -29,31 +29,29 @@ function App() {
     }
 
   };
-  return (
+    return (
     <div className="quiz_box">
     {
-    results?
-    (
-      <div class="result">
-        <h1>Your Score</h1>
-        <h2>{score}/{questions.length}</h2> 
-        <h3>Thank you for solve all the questions...</h3>
-        <button class="play" onClick={replay}> Play Again </button>
-      </div>):
-    (<div className="quiz_question">
-      {present_question.question}
-      <div className="quiz_box_options"> </div>
-        <ul className="quiz_ul">
-          { 
-            present_question.options.map((option,i)=> 
-            {
-              return <li className="quiz_li" 
-              onClick = {()  => get_Choice(i)}> {option}</li>
-            })
-          }
-
-        </ul>
-      </div>)    
+      results?(
+        <div class="result">
+          <h1>Your Score</h1>
+          <h2>{score}/{questions.length}</h2> 
+          <h3>Thank you for solve all the questions...</h3>
+          <button class="play" onClick={replay}> Play Again </button>
+        </div>):
+        (<div className="quiz_question">
+          {present_question.question}
+          <div className="quiz_box_options">
+          <ul className="quiz_ul">
+              { 
+                present_question.options.map((option,i)=> 
+                {
+                  return <li className="quiz_li" onClick = {() => get_Choice(i)}> {option}</li>
+                })
+              }
+            </ul>
+          </div>
+        </div>)    
     }
     </div>
     );
