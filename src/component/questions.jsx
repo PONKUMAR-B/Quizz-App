@@ -1,22 +1,23 @@
 export default[
     {
-    question: "1 . if ( 10>5 )?",
-    options:["False", "True"],
+    question: "1. What does HTML stand for?",
+    options:["Hyper Text Preprocessor", 
+             "Hyper Text Markup Language"],
     answer: 1,
     },
     {
-    question: "2 . a=5,b=10, if (a==b) is the condition true?",
+    question: "2. What does CSS stand for?",
+    options:["Common Style Sheet", "Cascading Style Sheet"],
+    answer: 1,
+    },
+    {
+    question: "3 . Javascript is a scripting language?",
     options:["Yes", "No"],
-    answer: 1,
-    },
-    {
-    question: "3 . What happened on August 15th in history?",
-    options:["Independence day", "Rupublic day"],
     answer: 0,
     },
     {
-    question: "4 . Are You good developer?",
-    options:["Yes", "No"],
+    question: "4 . What is the purpose of css?",
+    options:["Style a website", "Structured a website"],
     answer: 0,
     }
 ]

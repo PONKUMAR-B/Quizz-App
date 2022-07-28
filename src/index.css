@@ -84,7 +84,7 @@ padding: 0;
 display: flex; 
 justify-content: center; 
 align-items: center; 
-background-color: #ff00bf;
+background-color: #d400ff;
 
 }
 
@@ -94,43 +94,49 @@ height: 300px;
 width: 500px; 
 text-align: center; 
 background-color: rgb(249, 248, 248);
+box-shadow: 1px 2px 2px black, 1px 1px 1px #24012b ;
 display: flex; 
 flex-direction: column; 
 color: black;
 padding: 30px;
-font-size: 2rem; 
-border-inline-color: red;
+font-size: 30px; 
 border-radius: 10px;
 }
 
 .quiz_box_options
 {
 padding: 2px; 
-margin-top: 50px;
+margin-top: 30px;
+display: flex;
+justify-content: center;
 }
 
 .quiz_ul
 {
 display: grid; 
-grid-template-columns: 1fr 1fr; 
-grid-template-rows: 1fr 1fr; 
-grid-gap: 1rem; 
+grid-template-columns: 1fc 1fc; 
+grid-gap: 2rem; 
 padding:0; 
 list-style-type: none;
-color: blue;  
+color: rgb(0, 0, 0);  
+width: 400px;
 }
 
 .quiz_li
 {
-background-color: rgb(200, 200, 200); 
+background-color: rgb(198, 120, 201); 
 border-radius: 1rem; 
+font-size: 18px;
+border: 2px solid #d400ff;
 cursor: pointer; 
-padding: 7px; 
+padding: 10px 5px; 
+text-align: center;
 }
 
 .quiz_li:hover
 {
-box-shadow: 1px 1px 7px blue; 
+  background-color: transparent;
+  box-shadow: 1px 1px 7px blueviolet,1px 1px 7px blueviolet; 
 }
 
 .result{
@@ -142,27 +148,30 @@ box-shadow: 1px 1px 7px blue;
   margin-top: 50px;
   margin-left: 180px;
   display: block;
-  background-color: #000000;
-  color: rgb(255, 0, 157);
+  background-color: #ffffff;
+  color: rgb(225, 0, 255);
+  box-shadow: 1px 1px 7px blueviolet,1px 1px 7px blueviolet; 
   border-radius: 20px;
-  padding: 13px;
+  padding: 10px 15px;
   border-color: transparent;
   font-size: 16px;
   font-weight: bold;
+}
+.play:hover{
+  color: white;
+  background-color: rgb(255, 0, 221);
 }
 h1{
   color: white;
   text-shadow: 1px 1px 7px black;
 }
 h2{
-  color: black;
-  display: flex;
-  flex-direction: column;
+  color: rgb(0, 0, 0);
   font-size: 28px;
 }
 h3{
   margin-top: 40px;
   margin-left: 30px;
-  color: yellow;
   font-size: 24px;
+  color: white;
 }
